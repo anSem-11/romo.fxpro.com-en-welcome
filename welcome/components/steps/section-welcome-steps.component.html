@@ -1,0 +1,50 @@
+<section class="section-welcome-steps">
+	<div class="container">
+    <h2 class="steps__title"
+      fxTranslate="welcome_steps_title"
+      [animateOnScroll]="{ 'fadeIn25': 'true', 'slideLeftAndUp': '20' }"></h2>
+    <div class="steps">
+      <ul class="steps__list">
+        <li class="steps__item-wrapper"
+        [animateOnScroll]="{ 'fadeIn5': 'true', 'slideRight': '100', 'parent': '.steps__list' }">
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ right: '60%' }"></sound-wave>
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ left: '60%', transform: 'scaleX(-1)' }"></sound-wave>
+          <div *ngIf="!isDesktop" class="sound-wave-static-wrapper">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static.svg" alt="Sound wave">
+          </div>
+          <div *ngIf="!isDesktop" class="sound-wave-static-wrapper sound-wave-static-wrapper-right">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static.svg" alt="Sound wave">
+          </div>
+          <div class="steps__item" fxTranslate="welcome_steps_item_1">
+          </div>
+        </li>
+        <li class="steps__item-wrapper"
+        [animateOnScroll]="{ 'fadeIn5': 'true', 'slideLeft': '100', 'parent': '.steps__list' }">
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ right: '60%' }"></sound-wave>
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ left: '60%', transform: 'scaleX(-1)' }"></sound-wave>
+          <div style="transform: scaleX(-1)" *ngIf="!isDesktop" class="sound-wave-static-wrapper">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static-2.svg" alt="Sound wave">
+          </div>
+          <div style="transform: scaleX(-1)" *ngIf="!isDesktop" class="sound-wave-static-wrapper sound-wave-static-wrapper-right">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static-2.svg" alt="Sound wave">
+          </div>
+          <div class="steps__item" fxTranslate="welcome_steps_item_2">
+          </div>
+        </li>
+        <li class="steps__item-wrapper"
+        [animateOnScroll]="{ 'fadeIn5': 'true', 'slideRight': '100', 'parent': '.steps__list' }">
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ right: '60%' }"></sound-wave>
+          <sound-wave *ngIf="isDesktop" [soundWavePosition] ="{ left: '60%', transform: 'scaleX(-1)' }"></sound-wave>
+          <div *ngIf="!isDesktop" class="sound-wave-static-wrapper">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static-2.svg" alt="Sound wave">
+          </div>
+          <div *ngIf="!isDesktop" class="sound-wave-static-wrapper sound-wave-static-wrapper-right">
+            <img class="sound-wave-static" src="https://direct-landings.azureedge.net/assets/img/sections/lottie-animations/sound-wave-static.svg" alt="Sound wave">
+          </div>
+          <div class="steps__item" fxTranslate="welcome_steps_item_3">
+          </div>
+        </li>
+      </ul>
+    </div>
+	</div>
+</section>

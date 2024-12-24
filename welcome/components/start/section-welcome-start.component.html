@@ -1,0 +1,46 @@
+<section class="section-welcome-start">
+	<div class="container">
+    <div class="start">
+      <h2 class="start__title" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+        {{'welcome_start_title' | translate}}<span fxTranslate="welcome_start_title_span"></span>
+      </h2>
+      <ul class="start__list">
+        <li class="start__item" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/start-section/gravity-ui_signal.svg" alt="" class="start__item_icon">
+          <h3 class="start__item_title" fxTranslate="welcome_start_item_title1"></h3>
+          <p class="start__item_description">
+            {{'welcome_start_description1' | translate}}
+            <a [siteLink]="{path: '/help-section/education/beginners'}">{{'welcome_start_link4' | translate}}</a>
+          </p>
+        </li>
+        <li class="start__item" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/start-section/mdi_calendar-outline.svg" alt="" class="start__item_icon">
+          <h3 class="start__item_title" fxTranslate="welcome_start_item_title2"></h3>
+          <p class="start__item_description">
+            {{'welcome_start_description_2' | translate}}
+            <a [siteLink]="{path: '/trading-tools/forex-economic-calendar'}">{{'welcome_start_link1' | translate}}</a>
+            {{'welcome_start_description3' | translate}}
+          </p>
+        </li>
+        <li class="start__item" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/start-section/mdi_graph-line.svg" alt="" class="start__item_icon">
+          <h3 class="start__item_title" fxTranslate="welcome_start_item_title3"></h3>
+          <p class="start__item_description">
+            {{'welcome_start_description4' | translate}}
+            <a target="_blank" href="https://fxpro.news/">{{'welcome_start_link2' | translate}}</a>
+            {{'welcome_start_description5' | translate}}
+          </p>
+        </li>
+        <li class="start__item" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/start-section/tabler_calculator.svg" alt="" class="start__item_icon">
+          <h3 class="start__item_title" fxTranslate="welcome_start_item_title4"></h3>
+          <p class="start__item_description">
+            {{'welcome_start_description6' | translate}}
+            <a [siteLink]="{path: '/trading-tools/calculators/all-in-one'}">{{'welcome_start_link3' | translate}}</a>
+            {{'welcome_start_description7' | translate}}
+          </p>
+        </li>
+      </ul>
+    </div>
+	</div>
+</section>

@@ -1,0 +1,240 @@
+@import "../../../../global-styles/fx-utilities.scss";
+@import '../common/welcome-page-animations.scss';
+
+
+.section-welcome-new-to-traiding {
+  background: $fx-blue-dark;
+  padding: 85px 0 100px;
+  position: relative;
+  overflow: hidden;
+
+  .new-to-traiding {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__title {
+      margin: 0 auto 20px;
+      font: 500 32px/28px $font-family-inter;
+      text-align: left;
+      color:  $fx-white;
+      opacity: 0;
+    }
+
+    &__description {
+      margin: 0 auto 50px;
+      font: 500 20px/28px $font-family-inter;
+      text-align: left;
+      color:  $fx-white;
+      opacity: 0;
+    }
+
+    &__first-deposit {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__wrapper {
+      max-width: 370px;
+      padding: 20px;
+      color:  $fx-white;
+      font: 400 22px/26px $font-family-inter;
+      text-align: left;
+      border-radius: 10px;
+      position: relative;
+      opacity: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1px;
+      }
+
+      &:first-child {
+        background-color: #6C17DC;
+      }
+
+      &:nth-child(2) {
+        background-color: #822FEE;
+      }
+
+      &:last-child {
+        background-color: #9747FF;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+
+        p {
+          margin-bottom: 20px;
+        }
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .instruments {
+      p {
+        position: absolute;
+        font: 600 40px/48px $font-family-inter;
+        letter-spacing: -0.03em;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      &__energy {
+        top: 81px;
+        left: -200px;
+        background: linear-gradient(90deg, #8CFFAF 0%, rgba(16, 99, 41, 0.41) 100%);
+
+        &:host-context([lang="vi"]) & {
+          left: -225px;
+        }
+      }
+
+      &__futures {
+        top: 106px;
+        right: -204px;
+        background: linear-gradient(90deg, rgba(16, 99, 41, 0.41) 0%, #8CFFAF 100%);
+
+        &:host-context([lang="vi"]) & {
+          right: -360px;
+        }
+      }
+
+      &__forex {
+        top: 188px;
+        left: -124px;
+        background: linear-gradient(90deg, #8CFFAF 0%, rgba(16, 99, 41, 0.41) 100%);
+
+
+        &:host-context([lang="vi"]) & {
+          left: -175px;
+        }
+      }
+
+      &__metals {
+        top: 213px;
+        right: -155px;
+        background: linear-gradient(90deg, rgba(16, 99, 41, 0.41) 0%, #8CFFAF 100%);
+      }
+
+      &__indices {
+        bottom: 153px;
+        left: -230px;
+        background: linear-gradient(90deg, #8CFFAF 0%, rgba(16, 99, 41, 0.41) 100%);
+      }
+
+      &__cryptos {
+        bottom: 105px;
+        right: -242px;
+        background: linear-gradient(90deg, rgba(16, 99, 41, 0.41) 0%, #8CFFAF 100%);
+      }
+
+      &__stocks {
+        bottom: 46px;
+        left: -176px;
+        background: linear-gradient(90deg, #8CFFAF 0%, rgba(16, 99, 41, 0.41) 100%);
+      }
+    }
+
+    &__example {
+      color: #747474;
+      font: 400 14px/28px $font-family-inter;
+      margin-bottom: 20px;
+      text-align: left;
+
+      &-box {
+        padding: 50px;
+        background-color: #37373780;
+        border-radius: 10px;
+        opacity: 0;
+      }
+
+      &-text {
+        font: 400 18px/30px $font-family-inter;
+        color: $fx-white;
+        margin: 0;
+        text-align: left;
+
+        span {
+          font-weight: 700;
+
+          &:first-child {
+            color: $fx-purple;
+          }
+
+          &:last-child {
+            color: $fx-lettuce-green;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width:895px) {
+    padding: 75px 0 50px;
+
+    .new-to-traiding {
+
+      &__wrapper {
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 565px;
+
+          img {
+            width: 278px;
+            height: auto;
+          }
+        }
+      }
+
+      .instruments {
+        position: absolute;
+        bottom: -515px;
+        width: 273px;
+        height: 439px;
+
+        &__energy {
+          top: 0;
+          left: 15px;
+        }
+
+        &__futures {
+          top: 67px;
+          right: 34px;
+        }
+
+        &__forex {
+          top: 134px;
+          left: 84px;
+        }
+
+        &__metals {
+          top: 201px;
+          right: 0;
+        }
+
+        &__indices {
+          bottom: 134px;
+          left: 0;
+        }
+
+        &__cryptos {
+          bottom: 67px;
+          right: 34px;
+        }
+
+        &__stocks {
+          bottom: 0px;
+          left: 56px;
+        }
+      }
+    }
+  }
+}

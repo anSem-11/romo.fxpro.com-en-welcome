@@ -1,0 +1,69 @@
+<section class="section-welcome-new-to-traiding">
+	<div class="container">
+    <div class="new-to-traiding">
+      <h3 class="new-to-traiding__title" fxTranslate="welcome_new-to-traiding_title"
+        [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }"></h3>
+      <p class="new-to-traiding__description" fxTranslate="welcome_new-to-traiding_description"
+        [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }"></p>
+      <div class="new-to-traiding__first-deposit">
+        <div class="new-to-traiding__wrapper" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <p fxTranslate="welcome_new-to-traiding_text_1"></p>
+        </div>
+        <div class="new-to-traiding__wrapper" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+          <p fxTranslate="welcome_new-to-traiding_text_2"></p>
+        </div>
+        <div class="new-to-traiding__wrapper" id="new-to-traiding__wrapper" [animateOnScroll]="{ 'fadeIn10': 'true', 'slideUp': '50' }">
+          <p fxTranslate="welcome_new-to-traiding_text_3"></p>
+          <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/new-to-traiding/new-to-traiding-img.svg" alt="">
+          <div class="instruments">
+            <p class="instruments__energy"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideLeftAndRight': '50' }"
+              fxTranslate="welcome_new-to-traiding_energy"
+              ></p>
+            <p class="instruments__futures"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideRightAndLeft': '50' }"
+              fxTranslate="welcome_new-to-traiding_futures"
+              ></p>
+            <p class="instruments__forex"
+            [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideLeftAndRight': '50' }"
+              fxTranslate="welcome_new-to-traiding_forex"
+              *fxRestriction="{ disabledForRoutes: ['/welcome-noncfd']}"
+             ></p>
+            <p class="instruments__metals"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideRightAndLeft': '50' }"
+              fxTranslate="welcome_new-to-traiding_metals"
+              ></p>
+            <p class="instruments__indices"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideLeftAndRight': '50' }"
+              fxTranslate="welcome_new-to-traiding_indices"
+              ></p>
+            <p class="instruments__cryptos"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideRightAndLeft': '50' }"
+              fxTranslate="welcome_new-to-traiding_cryptos"
+              *fxRestriction="{ disabledForRoutes: ['/welcome-noncfd']}"
+              ></p>
+            <p class="instruments__forex"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideLeftAndRight': '50' }"
+              fxTranslate="welcome_new-to-traiding_stocks"
+              *fxRestriction="{ disabledForRoutes: ['/welcome']}"
+              ></p>
+            <p class="instruments__stocks"
+              [animateOnScroll]="{ 'fadeInAndOut': 'true', 'slideLeftAndRight': '50' }"
+              fxTranslate="welcome_new-to-traiding_stocks"
+              *fxRestriction="{ disabledForRoutes: ['/welcome-noncfd']}"
+              ></p>
+          </div>
+        </div>
+      </div>
+      <div class="new-to-traiding__example-box" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+        <p class="new-to-traiding__example" fxTranslate="welcome_new-to-traiding_example"></p>
+        <p class="new-to-traiding__example-text">
+          <span>{{'welcome_new-to-traiding_span' | translate}}</span>
+          {{'welcome_new-to-traiding_example_text' | translate}}
+          <span>{{'welcome_new-to-traiding_span_1' | translate}}</span>
+          {{'welcome_new-to-traiding_example_text_1' | translate}}
+        </p>
+      </div>
+    </div>
+	</div>
+</section>

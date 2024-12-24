@@ -1,0 +1,140 @@
+@keyframes fadeInUpSideWays {
+  0% {
+    opacity: 0;
+    transform: translate(20px,20px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
+@keyframes fadeInUpSideWaysScaleUp {
+  0% {
+    opacity: 0;
+    transform: translate(20px,20px) scale(0) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+    transform-origin: right bottom;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeftQuick {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) ;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeInRightQuick {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) ;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lineDisappear {
+  from {
+    width: 100%;
+    left: 0;
+  }
+  to {
+    width: 0;
+    left: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-out-line {
+  animation: lineDisappear 0.9s ease-in forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-in-up--sideways {
+  animation: fadeInUpSideWays 1s ease-out forwards;
+}
+
+.fade-in-up--sideways-scale-up {
+  animation: fadeInUpSideWaysScaleUp 0.5s ease-out forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fade-in-left--quick {
+  animation: fadeInLeftQuick 1s ease-out forwards;
+}
+
+.fade-in-right--quick {
+  animation: fadeInRightQuick 1s ease-out forwards;
+}

@@ -1,0 +1,27 @@
+@import "../../../global-styles/fx-utilities.scss";
+
+::ng-deep {
+  .section-need-help {
+    background-color: $fx-blue-dark;
+
+    .need-help {
+      background-color: #372A47 !important;
+    }
+  }
+
+  &.footer-section {
+    background: $fx-blue-dark;
+    color: #b2bec3;
+
+    .sponsor__title span,
+    .sponsor__title span strong,
+    .fx-logo {
+      color: #fff;
+    }
+
+    .info-sponsor-block {
+      color: #fff;
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+<section class="section-welcome-ignite">
+  <div class="container">
+    <div class="ignite__bg">
+      <iframe #iframe src='https://my.spline.design/particlesignite-d89da157758c41200ffaa16619315c7a/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <img src="https://direct-landings.azureedge.net/assets/img/pages/welcome/ignite-section/ignite-img.webp" alt="" class="ignite__bg_mob">
+    <div class="ignite">
+      <p class="ignite__description" [animateOnScroll]="{ 'fadeIn25': 'true', 'slideUp': '50' }">
+        <span>{{'welcome_ignite_description_span' | translate}}</span> {{'welcome_ignite_description' | translate}} <span>{{'welcome_ignite_description_span_1' | translate}}</span>
+      </p>
+      <a
+          href="javascript:void(0)"
+          rel="nofollow noopener"
+          target="_blank"
+          directRegisterLink
+          class="ignite__btn header__btn_register"
+          fxTranslate="welcome_hero_btn"
+          [animateOnScroll]="{ 'fadeIn25': 'true' }"
+        ></a>
+    </div>
+  </div>
+</section>

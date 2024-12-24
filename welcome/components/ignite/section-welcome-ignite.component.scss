@@ -1,0 +1,84 @@
+@import "../../../../global-styles/fx-utilities.scss";
+@import '../common/welcome-page-animations.scss';
+
+.section-welcome-ignite {
+  background: $fx-blue-dark;
+  padding: 446px 0 0;
+  position: relative;
+  overflow: hidden;
+
+  .ignite {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__bg {
+      width: 708px;
+      height: 439px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+
+      &_mob {
+        display: none;
+      }
+    }
+
+    &__description {
+      margin: 0 auto 50px;
+      font: 500 36px/46px $font-family-inter;
+      text-align: center;
+      color:  $fx-white;
+      opacity: 0;
+
+      span {
+        color: $fx-lettuce-green;
+      }
+    }
+
+    &__btn {
+      width: 201px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $fx-white;
+      font: 500 18px/21px $font-family-inter;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin: 0 auto;
+      background-color: $fx-purple;
+      border: 1px solid $fx-purple;
+      border-radius: 30px;
+      opacity: 0;
+
+      &:hover {
+        background-color: transparent;
+        color: $fx-purple;
+      }
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    padding-top: 252px;
+
+    .ignite {
+      &__bg {
+        display: none;
+
+        &_mob {
+          display: block;
+          width: 474px;
+          height: auto;
+          position: absolute;
+          top: -85px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div #soundWave class="sound-wave-container"  [ngStyle]="soundWavePosition">
+  <div class="line" [animateOnIntersection]="{ 'threshold': 0.1, 'class': 'fade-out-line', 'animateOnce': true, 'rootMargin': '0px 0px -120px 0px' }"></div>
+  <div class="lottie-wrapper">
+    <ng-lottie
+      containerClass="sound-wave"
+      [options]="lottieConfig_start"
+      [styles]="originalAnimationStyle"
+      (animationCreated)="handleAnimationCreated($event)">
+    </ng-lottie>
+  </div>
+  <div class="lottie-wrapper hide">
+    <ng-lottie
+      containerClass="sound-wave"
+      [options]="lottieConfig_looped"
+      [styles]="loopedAnimationStyle"
+      (animationCreated)="handleLoopedAnimationCreated($event)">
+    </ng-lottie>
+  </div>
+</div>

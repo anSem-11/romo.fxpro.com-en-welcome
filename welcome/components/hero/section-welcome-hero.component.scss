@@ -1,0 +1,264 @@
+@import "../../../../global-styles/fx-utilities.scss";
+
+.section-welcome-hero {
+  background: $fx-blue-dark;
+
+	padding-top: 20px;
+  padding-bottom: 136px;
+  overflow: hidden;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+
+    &__logo {
+      width: 110px;
+      height: 110px;
+
+      &_img {
+        width: 110px;
+        height: 110px;
+      }
+
+      &-mob {
+        display: none;
+      }
+    }
+
+    &__btn {
+      &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &_login {
+        color: $fx-purple;
+        font: 500 16px/19px $font-family-inter;
+        margin: 0 15px 0 0;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 3px;
+
+        &:host-context([lang="ar"]) & {
+          margin: 0 0 0 15px;
+        }
+
+        &::after {
+          display: block;
+          content: '';
+          background-color: $fx-purple;
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:hover::after {
+          left: 200px;
+        }
+      }
+
+      &_register {
+        width: 130px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $fx-purple;
+        border: 1px solid $fx-purple;
+        border-radius: 30px;
+        color: $fx-white;
+        font: 500 16px/19px $font-family-inter;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: transparent;
+          color: $fx-purple;
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .hero {
+    padding: 40px 0 0 0;
+    position: relative;
+    z-index: 2;
+
+    &__bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 843px;
+    }
+
+    &__title {
+      background: linear-gradient(180deg, #FFFFFF 37.61%, #D9F5E2 109.73%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      text-shadow: 0px 4px 30px 0px #6C17DC4D;
+      font: 600 72px/82px $font-family-inter;
+      margin: 0 auto 39px auto;
+
+      span {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+
+    &__description {
+      font: 500 18px/27px $font-family-inter;
+      letter-spacing: -0.01em;
+      text-align: center;
+      margin: 0 auto 98px auto;
+      color: $fx-lettuce-green;
+      max-width: 370px;
+    }
+
+    &__wrapper {
+      max-width: 370px;
+      width: 100%;
+      padding: 50px;
+      background-color: #0000004D;
+      backdrop-filter: blur(3px);
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    &__btn {
+      width: 270px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $fx-white;
+      font: 500 18px/21px $font-family-inter !important;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin: 0 auto 63px auto;
+    }
+
+    &__text {
+      font: 400 43px/55px $font-family-inter;
+      letter-spacing: -0.03em;
+      text-align: center;
+      position: relative;
+      color: $fx-white;
+      margin: 0 auto 40px;
+
+      &:host-context([lang="id"]) & {
+        font: 400 36px/45px $font-family-inter;
+      }
+
+      span {
+        position: absolute;
+
+        &:first-child {
+          left: 41px;
+          top: -40px;
+
+          &:host-context([lang="id"], [lang="ms"]) & {
+            left: -10px;
+          }
+        }
+
+        &:nth-child(2) {
+          right: 64px;
+          bottom: -40px;
+          color: $fx-lettuce-green;
+        }
+
+        &:host-context([lang="id"], [lang="ms"]) & {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    padding-bottom: 89px;
+
+    .container {
+      background: url(https://direct-landings.azureedge.net/assets/img/pages/welcome/hero-section/hero-bg.webp) no-repeat center/cover;
+    }
+
+    .header {
+      &__logo {
+        display: none;
+
+        &-mob {
+          display: block;
+          width: 80px;
+          height: 22px;
+
+          img {
+            width: 80px;
+            height: 22px;
+          }
+        }
+      }
+
+      &__btn {
+
+        &_login {
+          font: 500 12px/12px $font-family-inter;
+        }
+
+        &_register {
+          width: 78px;
+          height: 36px;
+          font: 500 12px/12px $font-family-inter;
+        }
+      }
+    }
+
+    .hero {
+      &__bg {
+        display: none;
+      }
+
+      &__title {
+        font: 600 60px/69px $font-family-inter;
+        margin-bottom: 30px;
+
+        span {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+
+      &__description {
+        margin-bottom: 26px;
+      }
+
+      &__wrapper {
+        padding: 50px 15px;
+      }
+
+      &__btn {
+        width: 270px;
+        height: 55px;
+      }
+    }
+  }
+}

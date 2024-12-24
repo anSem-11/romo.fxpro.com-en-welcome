@@ -1,0 +1,76 @@
+@import "../../../../global-styles/fx-utilities.scss";
+@import '../common/welcome-page-animations.scss';
+
+.section-welcome-start {
+  background: $fx-blue-dark;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  .start {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__title {
+      margin: 0 auto 50px;
+      font: 500 36px/46px $font-family-inter;
+      text-align: left;
+      color: $fx-white;
+      opacity: 0;
+
+      span {
+        color: $fx-lettuce-green;
+      }
+    }
+
+    &__list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    &__item {
+      width: 100%;
+      padding: 20px;
+      background: $fx-purple;
+      border-radius: 20px;
+      opacity: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+
+      &_icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 10px;
+      }
+
+      &_title {
+        font: 400 22px/26px $font-family-inter;
+        text-align: left;
+        margin-bottom: 10px;
+        color: $fx-white;
+      }
+
+      &_description {
+        font: 400 16px/24px $font-family-inter;
+        color: $fx-white;
+        margin: 0;
+
+        a {
+          color: $fx-white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
